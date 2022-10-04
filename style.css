@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    box-sizing: border-box;
+}
+.card{
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.top-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 2em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.heading
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1em;
+}
+.money-back
+{
+    margin-bottom: 0.6em;
+    color: hsl(71, 73%, 54%);
+}
+.description
+{
+    color: hsl(204, 43%, 93%);
+}
+.top-card ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.bottom-cards
+{
+    display: flex;
+}
+
+.left-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    padding: 2em;
+    color: white;
+    border-bottom-left-radius: 7px;
+}
+.heading-bottom
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right-card
+{
+    background-color: hsl(179, 72%, 55%);
+    color: white;
+    padding: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom-right-radius: 7px;
+}
+.right-card ul{
+    list-style: none;
+    padding: 0;
+    color: hsl(204, 43%, 93%);
+}
+.price{
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.price span{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.description-bottom
+{
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+.btn
+{
+    min-width: 100;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    box-shadow: 0 5px teal;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: hsl(71, 100%, 50%);
+}
+.left{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+@media (max-width: 576px)
+{
+    body{
+        height: 100%;
+    }
+    .card{
+        width: 300px;
+    }
+    .bottom-cards
+    {
+        display: block;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        overflow: hidden;
+    }
+    .left-card
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        border-radius: 0;
+    }
+    .right-card
+    {
+        width: 100%;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+}
